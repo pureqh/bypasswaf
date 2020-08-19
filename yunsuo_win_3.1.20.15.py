@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+#将单引号换为双引号即可绕过云锁官网
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
