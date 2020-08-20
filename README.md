@@ -1,6 +1,7 @@
 # bypasswaf
 
 2.0：增加优化了部分规则 现在bypass云锁tamper支持所有的注入类型了！<br>
+更新了bypass 云锁 数字型注入的tamper<br>
 
 针对最新版云锁和安全狗的sqlmap自动化绕过脚本<br>
 
