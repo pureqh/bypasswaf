@@ -41,6 +41,7 @@ def tamper(payload, **kwargs):
         payload=payload.replace("AND","'/*' AND",1)
         payload=payload.replace("OPERATION","'/*' 1")
         payload=payload.replace("OR JSON","'/*' OR JSON")
+        payload=payload.replace("OR GTID","'/*' OR GTID")
         payload=payload.replace("OR EXP","'/*' OR EXP")
         payload=payload.replace(";","'/*' ;")
         return payload
