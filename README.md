@@ -25,7 +25,7 @@ safedog_upload_huanhang.txt<br>
 blog:https://pureqh.top/?p=1882<br>
 ~~云锁：引号包裹注释符绕过检测~~<br>
 ~~blog:https://pureqh.top/?p=4175~~<br>
-云锁：内联嵌入特殊字符绕过检测<br>
+云锁：注释符嵌入特殊字符绕过检测<br>
 blog:https://pureqh.top/?p=4414<br>
 文件上传：Content-Disposition参数溢出、文件名换行绕过<br>
 blog:https://pureqh.top/?p=1225<br>
