@@ -1,5 +1,7 @@
 # bypasswaf
 
+仅供学习 请勿用作非法用途<br>
+
 2.0：<br>
 增加优化了部分规则 现在bypass云锁tamper支持所有的注入类型了！<br>
 更新了bypass 云锁 数字型注入的tamper<br>
