@@ -19,7 +19,7 @@ from lib.core.enums import DBMS
 __priority__ = PRIORITY.LOW
 
 def dependencies():
-    singleTimeWarnMessage("Bypass yunsuo_number by pureqh'%s' only %s" % (os.path.basename(__file__).split(".")[0], DBMS.MYSQL))
+    singleTimeWarnMessage("Bypass yunsuo by pureqh'%s' only %s" % (os.path.basename(__file__).split(".")[0], DBMS.MYSQL))
 
 def tamper(payload, **kwargs):
 
