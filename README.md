@@ -18,7 +18,7 @@ bypass云锁SQL注入tamper （可0警告绕过云锁）<br>
 safedog_upload_yichu.txt<br>
 ![Image text](https://github.com/pureqh/bypasswaf/blob/master/yichu.png?raw=true)
 safedog_upload_huanhang.txt<br>
-![Image text](https://github.com/pureqh/bypasswaf/blob/master/huanhang.jpg?raw=true)
+![Image text](https://github.com/pureqh/bypasswaf/blob/master/huanhang.png?raw=true)
 
 
 ## 利用知识点：<br>
