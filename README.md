@@ -6,6 +6,7 @@
 增加优化了部分规则 现在bypass云锁tamper及bypass安全狗tamper支持所有的注入类型了！<br>
 更新了bypass 安全狗 任意文件上传的方法（适用于业务系统存在任意文件上传漏洞但是服务器安装了安全狗环境）<br>
 更新了bypass 安全狗 SQL注入tamper，现在支持所有类型的注入了<br>
+更新了bypass 安全狗最新版的tamper 2021.11<br>
 
 ## 针对最新版云锁和安全狗的sqlmap自动化绕过脚本<br>
 
